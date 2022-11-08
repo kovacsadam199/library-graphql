@@ -1,0 +1,12 @@
+{
+  authors {
+    id
+    firstName
+    lastName
+    birthDay
+    books {
+      id
+      title
+    }
+  }
+  }
