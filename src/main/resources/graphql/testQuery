@@ -10,3 +10,21 @@
     }
   }
   }
+
+
+  query{authorById(id:3){
+    id
+    firstName
+    lastName
+    books {
+      id
+      title
+    }
+  }}
+
+  mutation{
+    addBook(book: {title: "testAddBook2" , authorId: 1 }){
+      id
+      title
+    }
+  }

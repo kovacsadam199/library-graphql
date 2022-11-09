@@ -11,13 +11,15 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
+@RequiredArgsConstructor
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
+    @NonNull
     private String title;
-
+    @NonNull
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     @JsonIgnore

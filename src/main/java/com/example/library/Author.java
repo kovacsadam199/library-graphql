@@ -1,7 +1,9 @@
 package com.example.library;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -12,6 +14,8 @@ import java.util.List;
 @Table(name = "author")
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Author {
 
     @Id
